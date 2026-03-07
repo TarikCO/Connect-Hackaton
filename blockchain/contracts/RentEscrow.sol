@@ -74,8 +74,8 @@ contract RentEscrow {
 
     function getAverageRating() public view returns (uint) {
         if (numRatings == 0) return 0;
-        return totalRating / numRatings;
-    }
+        return (totalRating * 100) / numRatings; //Multiplied by a 100 for chain purposes
+    } // dont forget to divide by a 100 off chain
 
     function getNumRatings() public view returns (uint) {
         return numRatings;
