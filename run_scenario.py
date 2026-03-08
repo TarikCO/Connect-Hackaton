@@ -1,6 +1,18 @@
 import time
-from backend.app.services.blockchain import BlockchainService
-from backend.app.services.security_engine import get_address_security_score
+import sys
+import os
+
+# Ensure the project's embedded venv 'app' package is importable when running
+# this script from the repository root. This makes `from app...` imports work.
+_venv_root = os.path.join(os.path.dirname(__file__), "backend", "venv")
+# Add venv site-packages so installed dependencies (e.g. `web3`) are importable
+_venv_site = os.path.join(_venv_root, "Lib", "site-packages")
+sys.path.insert(0, _venv_site)
+# Also add the venv root so the bundled `app` package is importable
+sys.path.insert(0, _venv_root)
+
+from app.services.blockchain import BlockchainService
+from app.services.security_engine import get_address_security_score
 
 def run_demo_scenario():
     print("--- 🛡️ STARTING SECURITY SHIELD SCENARIO ---")

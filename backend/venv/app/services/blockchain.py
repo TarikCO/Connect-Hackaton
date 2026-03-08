@@ -37,7 +37,7 @@ class BlockchainService:
             # Adjust this path to match your project structure
             abi_path = os.path.join(
                 os.path.dirname(__file__), 
-                "../../blockchain/artifacts/contracts/RentEscrow.sol/RentEscrow.json"
+                "../../../../blockchain/artifacts/contracts/RentEscrow.sol/RentEscrow.json"
             )
             with open(abi_path, "r") as f:
                 artifact = json.load(f)
