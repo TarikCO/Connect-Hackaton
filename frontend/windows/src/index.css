@@ -6,7 +6,6 @@
 
 @layer base {
   :root {
-<<<<<<< HEAD
     --background: 220 13% 13%;
     --foreground: 210 35% 95%;
 
@@ -27,33 +26,10 @@
 
     --accent: 156 64% 38%;
     --accent-foreground: 220 28% 13%;
-=======
-    --background: 51 33% 95%;
-    --foreground: 219 40% 14%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 219 40% 14%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 219 40% 14%;
-
-    --primary: 159 88% 30%;
-    --primary-foreground: 55 43% 96%;
-
-    --secondary: 38 54% 90%;
-    --secondary-foreground: 219 40% 14%;
-
-    --muted: 51 28% 89%;
-    --muted-foreground: 219 14% 39%;
-
-    --accent: 21 91% 45%;
-    --accent-foreground: 0 0% 100%;
->>>>>>> b14b8433d5e8c04454c2622ac97c931bd7b5f35d
 
     --destructive: 0 74% 46%;
     --destructive-foreground: 210 40% 98%;
 
-<<<<<<< HEAD
     --border: 215 15% 30%;
     --input: 215 15% 30%;
     --ring: 156 72% 42%;
@@ -79,33 +55,6 @@
     --gradient-hero: linear-gradient(180deg, hsl(220 13% 13%) 0%, hsl(220 13% 13%) 100%);
     --shadow-glow: 0 0 32px -8px hsl(156 72% 42% / 0.35);
     --shadow-card: 0 6px 28px -12px hsl(220 30% 6% / 0.65);
-=======
-    --border: 43 20% 78%;
-    --input: 43 20% 78%;
-    --ring: 159 88% 30%;
-
-    --radius: 0.75rem;
-
-    --sidebar-background: 52 27% 92%;
-    --sidebar-foreground: 219 40% 14%;
-    --sidebar-primary: 159 88% 30%;
-    --sidebar-primary-foreground: 55 43% 96%;
-    --sidebar-accent: 51 28% 89%;
-    --sidebar-accent-foreground: 219 40% 14%;
-    --sidebar-border: 43 20% 78%;
-    --sidebar-ring: 159 88% 30%;
-
-    --glow: 159 88% 30%;
-    --glow-secondary: 21 91% 45%;
-    --surface: 51 28% 89%;
-    --surface-hover: 50 23% 85%;
-    --success: 152 69% 46%;
-    --warning: 38 92% 50%;
-    --gradient-primary: linear-gradient(135deg, hsl(159 88% 30%), hsl(21 91% 45%));
-    --gradient-hero: linear-gradient(180deg, hsl(51 33% 95%) 0%, hsl(45 43% 90%) 60%, hsl(51 33% 95%) 100%);
-    --shadow-glow: 0 0 30px -5px hsl(159 88% 30% / 0.3);
-    --shadow-card: 0 4px 24px -10px hsl(219 40% 14% / 0.3);
->>>>>>> b14b8433d5e8c04454c2622ac97c931bd7b5f35d
 
     font-family: 'Sora', sans-serif;
   }
@@ -166,13 +115,8 @@
 }
 
 @keyframes pulse-glow {
-<<<<<<< HEAD
   0%, 100% { box-shadow: 0 0 20px -5px hsl(156 72% 42% / 0.2); }
   50% { box-shadow: 0 0 40px -5px hsl(156 72% 42% / 0.4); }
-=======
-  0%, 100% { box-shadow: 0 0 20px -5px hsl(159 88% 30% / 0.2); }
-  50% { box-shadow: 0 0 40px -5px hsl(159 88% 30% / 0.4); }
->>>>>>> b14b8433d5e8c04454c2622ac97c931bd7b5f35d
 }
 
 @keyframes rise {
