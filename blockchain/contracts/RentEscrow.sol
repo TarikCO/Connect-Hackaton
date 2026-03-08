@@ -49,9 +49,11 @@ contract RentEscrow {
     function releaseFunds() public {
         require(confirmed, "Lease not confirmed");
         uint yieldAmount = (amount * yieldPercent) / 100;
-        payable(landlord).transfer(amount);
+        uint finalLandlordAmount = amount - yieldAmount;
+        
+        payable(landlord).transfer(finalLandlordAmount);
         payable(tenant).transfer(yieldAmount);
-        emit Released(amount, yieldAmount);
+        emit Released(finalLandlordAmount, yieldAmount);
     }
 
     function refund() public {
