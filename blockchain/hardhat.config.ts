@@ -12,7 +12,7 @@ const config = defineConfig({
     localhost: {
       type: "http",
       url: "http://127.0.0.1:8545",
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : "remote",
     },
   },
 });
