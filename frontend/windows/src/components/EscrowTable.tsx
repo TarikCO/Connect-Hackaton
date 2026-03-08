@@ -10,7 +10,7 @@ const format = (address: string) => `${address.slice(0, 8)}...${address.slice(-4
 
 const EscrowTable = ({ escrows, onSelect }: EscrowTableProps) => {
   return (
-    <div className="rounded-xl border border-stone-300/80 bg-white/90 p-2 shadow-lg shadow-slate-900/5">
+    <div className="rounded-xl border border-slate-700/80 bg-slate-900/55 p-2 text-slate-100 shadow-lg shadow-slate-950/20 backdrop-blur-sm">
       <Table>
         <TableHeader>
           <TableRow>

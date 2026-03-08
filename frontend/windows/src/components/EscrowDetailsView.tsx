@@ -25,7 +25,7 @@ const EscrowDetailsView = ({ escrow, open, onOpenChange }: EscrowDetailsViewProp
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl border-stone-300 bg-white">
+      <DialogContent className="max-w-3xl border-slate-300 bg-white text-slate-900">
         <DialogHeader>
           <DialogTitle className="font-mono text-base">{escrow.address}</DialogTitle>
           <DialogDescription>
@@ -36,7 +36,7 @@ const EscrowDetailsView = ({ escrow, open, onOpenChange }: EscrowDetailsViewProp
         <div className="grid gap-6 md:grid-cols-2">
           <section className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Contract Information</h3>
-            <div className="rounded-md border border-stone-300 bg-stone-50 p-3 text-sm text-slate-700">
+            <div className="rounded-md border border-slate-300 bg-slate-50 p-3 text-sm text-slate-700">
               <p>Tenant: <span className="font-mono text-xs">{escrow.tenant}</span></p>
               <p>Landlord: <span className="font-mono text-xs">{escrow.landlord}</span></p>
               <p>Rent Amount: {escrow.rentAmountEth} ETH</p>
@@ -57,7 +57,7 @@ const EscrowDetailsView = ({ escrow, open, onOpenChange }: EscrowDetailsViewProp
             <div className="max-h-52 space-y-2 overflow-auto pr-2 text-sm">
               {escrow.ratingHistory.length ? (
                 escrow.ratingHistory.map((entry) => (
-                  <div key={entry.id} className="rounded-md border border-stone-300 p-2">
+                  <div key={entry.id} className="rounded-md border border-slate-300 p-2">
                     <p className="inline-flex items-center gap-2 text-amber-600">
                       <Star className="h-4 w-4" />
                       {entry.score}/5
@@ -77,7 +77,7 @@ const EscrowDetailsView = ({ escrow, open, onOpenChange }: EscrowDetailsViewProp
           <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Transaction History</h3>
           <div className="max-h-44 space-y-2 overflow-auto pr-2 text-sm">
             {escrow.transactionHistory.map((txn) => (
-              <div key={txn.id} className="rounded-md border border-stone-300 p-2">
+              <div key={txn.id} className="rounded-md border border-slate-300 p-2">
                 <p className="font-medium text-slate-800">{txn.note}</p>
                 <p className="font-mono text-xs text-slate-500">{txn.hash}</p>
                 <p className="text-xs text-slate-400">{new Date(txn.timestamp).toLocaleString()}</p>
